@@ -25,8 +25,8 @@ class JmesServiceProvider extends ServiceProvider
         $this->mergeConfigFrom($configPath, 'jmes');
 
         $this->commands([
-            \Libtek\Jmes\Console\JmesCompileCommand::class,
-            \Libtek\Jmes\Console\JmesClearCommand::class,
+            \Ofumbi\Jmes\Console\JmesCompileCommand::class,
+            \Ofumbi\Jmes\Console\JmesClearCommand::class,
         ]);
     }
 
