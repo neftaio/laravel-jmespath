@@ -9,7 +9,7 @@ This package also provides Artisan commands to pre-compile and manage your JMESP
 ### Install through composer
 
 ```bash
-$ composer require libtek/laravel-jmespath
+$ composer require ofumbi/laravel-jmespath
 ```
 
 ### Add Service Provider
@@ -19,7 +19,7 @@ In `config/app.php`, add the service provider to the `$providers` array:
 ```php
 'providers' => [
     // ...
-    Libtek\Jmes\JmesServiceProvider::class,
+    Ofumbi\Jmes\JmesServiceProvider::class,
 ],
 ```
 
@@ -53,6 +53,12 @@ $result = Jmes::search($expression, $data);
 
 ```php
 $result = jmes($expression, $data);
+```
+
+#### Search Collection: // Returns array or string
+```php
+$names = collect($data);
+$result = $names->search($expression);
 ```
 
 ### Artisan commands

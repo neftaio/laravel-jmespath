@@ -1,6 +1,6 @@
 <?php
 
-use Libtek\Jmes\Jmes;
+use Ofumbi\Jmes\Jmes;
 
 if (!function_exists('jmes')) {
     /**

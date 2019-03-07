@@ -1,5 +1,5 @@
 <?php
-namespace Libtek\Jmes\Console;
+namespace Ofumbi\Jmes\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;

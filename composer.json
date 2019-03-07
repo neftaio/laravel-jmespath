@@ -1,6 +1,6 @@
 {
-  "name": "libtek/laravel-jmespath",
-  "description": "jmespath.php service provider for Laravel 5",
+  "name": "ofumbi/laravel-jmespath",
+  "description": "JmesPath Collection Macro",
   "keywords": [
     "jmespath",
     "laravel",
@@ -9,8 +9,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Ben Tischler",
-      "email": "btischler@gmail.com"
+      "name": "Ofumbi Stephen",
+      "email": "ofuzak@gmail.com"
     }
   ],
   "require": {
@@ -24,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Libtek\\Jmes\\": "src/"
+      "Ofumbi\\Jmes\\": "src/"
     },
     "files": [
       "src/helpers.php"

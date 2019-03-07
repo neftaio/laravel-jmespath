@@ -1,5 +1,5 @@
 <?php
-namespace Libtek\Jmes;
+namespace Ofumbi\Jmes;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -49,6 +49,10 @@ class JmesServiceProvider extends ServiceProvider
         $this->app->singleton('jmes', function ($app) {
             return new Jmes;
         });
+		
+		 \Illuminate\Support\Collection::macro('search', function ($jmespath) {
+			return Jmes::search($jmespath ,  $this->all());
+		});
     }
 
     /**

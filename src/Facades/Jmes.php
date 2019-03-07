@@ -1,5 +1,5 @@
 <?php
-namespace Libtek\Jmes\Facades;
+namespace Ofumbi\Jmes\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

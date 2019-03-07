@@ -1,5 +1,5 @@
 <?php
-namespace Libtek\Jmes;
+namespace Ofumbi\Jmes;
 
 use JmesPath\Parser;
 use JmesPath\TreeCompiler;
