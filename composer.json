@@ -1,35 +1,46 @@
 {
-  "name": "ofumbi/laravel-jmespath",
-  "description": "JmesPath Collection Macro",
-  "keywords": [
-    "jmespath",
-    "laravel",
-    "jmes"
-  ],
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Ofumbi Stephen",
-      "email": "ofuzak@gmail.com"
-    }
-  ],
-  "require": {
-    "php": ">=5.5.9",
-    "mtdowling/jmespath.php": "~2.2",
-    "illuminate/support": "~5.8",
-    "illuminate/config": "~5.8",
-    "illuminate/console": "~5.8",
-    "illuminate/filesystem": "~5.8",
-    "illuminate/container": "~5.8"
-  },
-  "autoload": {
-    "psr-4": {
-      "Ofumbi\\Jmes\\": "src/"
-    },
-    "files": [
-      "src/helpers.php"
-    ]
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+	"name": "ofumbi/laravel-jmespath",
+	"description": "JmesPath Collection Macro",
+	"keywords": [
+		"jmespath",
+		"laravel",
+		"jmes"
+	],
+	"license": "MIT",
+	"authors": [{
+		"name": "Ofumbi Stephen",
+		"email": "ofuzak@gmail.com"
+	}],
+	"require": {
+		"php": "^7.1.3",
+		"mtdowling/jmespath.php": "~2.2",
+		"illuminate/support": "5.8.*",
+		"illuminate/config": "5.8.*",
+		"illuminate/console": "5.8.*",
+		"illuminate/filesystem": "5.8.*",
+		"illuminate/container": "5.8.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Ofumbi\\Jmes\\": "src/"
+		},
+		"files": [
+			"src/helpers.php"
+		]
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "9.0-dev"
+		},
+		"laravel": {
+			"providers": [
+				"Ofumbi\\Jmes\\JmesServiceProvider::class,"
+			],
+			"aliases": {
+				"Jmes": "Ofumbi\Jmes\Facades\Jmes::class"
+			}
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }
