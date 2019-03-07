@@ -34,10 +34,10 @@
 		},
 		"laravel": {
 			"providers": [
-				"Ofumbi\\Jmes\\JmesServiceProvider::class,"
+				"Ofumbi\\Jmes\\JmesServiceProvider"
 			],
 			"aliases": {
-				"Jmes": "Ofumbi\\Jmes\\Facades\\Jmes::class"
+				"Jmes": "Ofumbi\\Jmes\\Facades\\Jmes"
 			}
 		}
 	},
