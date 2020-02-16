@@ -1,5 +1,5 @@
 <?php
-namespace Ofumbi\Jmes;
+namespace Neftaio\Jmes;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -25,8 +25,8 @@ class JmesServiceProvider extends ServiceProvider
         $this->mergeConfigFrom($configPath, 'jmes');
 
         $this->commands([
-            \Ofumbi\Jmes\Console\JmesCompileCommand::class,
-            \Ofumbi\Jmes\Console\JmesClearCommand::class,
+            \Neftaio\Jmes\Console\JmesCompileCommand::class,
+            \Neftaio\Jmes\Console\JmesClearCommand::class,
         ]);
     }
 
@@ -49,10 +49,10 @@ class JmesServiceProvider extends ServiceProvider
         $this->app->singleton('jmes', function ($app) {
             return new Jmes;
         });
-		
-		 \Illuminate\Support\Collection::macro('search', function ($jmespath) {
-			return Jmes::search($jmespath ,  $this->all());
-		});
+        
+        \Illuminate\Support\Collection::macro('search', function ($jmespath) {
+            return Jmes::search($jmespath, $this->all());
+        });
     }
 
     /**

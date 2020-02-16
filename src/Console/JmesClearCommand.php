@@ -1,9 +1,9 @@
 <?php
-namespace Ofumbi\Jmes\Console;
+namespace Neftaio\Jmes\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
-use Ofumbi\Jmes\Jmes;
+use Neftaio\Jmes\Jmes;
 
 class JmesClearCommand extends Command
 {
@@ -46,15 +46,21 @@ class JmesClearCommand extends Command
         $result = Jmes::purgeCompiled();
 
         if ($result['success']) {
-            $this->output->success(sprintf("Successfully removed %d %s", count($result['success']),
-                (1 === count($result['success']) ? 'file' : 'files')));
+            $this->output->success(sprintf(
+                "Successfully removed %d %s",
+                count($result['success']),
+                (1 === count($result['success']) ? 'file' : 'files')
+            ));
 
             $this->output->newLine();
         }
         if ($result['failure']) {
-            $this->output->warning(sprintf("Failed to remove %d %s:\n%s", count($result['failure']),
+            $this->output->warning(sprintf(
+                "Failed to remove %d %s:\n%s",
+                count($result['failure']),
                 (1 === count($result['failure']) ? 'file' : 'files'),
-                implode("\n", $result['failure'])));
+                implode("\n", $result['failure'])
+            ));
 
             $this->output->newLine();
         }

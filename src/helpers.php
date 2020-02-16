@@ -1,6 +1,6 @@
 <?php
 
-use Ofumbi\Jmes\Jmes;
+use Neftaio\Jmes\Jmes;
 
 if (!function_exists('jmes')) {
     /**

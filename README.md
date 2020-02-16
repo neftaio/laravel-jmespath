@@ -1,15 +1,17 @@
 # laravel-jmespath
 
-A Laravel 5 wrapper for use of the [jmespath.php](https://github.com/jmespath/jmespath.php) library.  The jmespath.php library is an implementation of the [JMESPath](http://jmespath.org/) specification.
+A Laravel 6 wrapper for use of the [jmespath.php](https://github.com/jmespath/jmespath.php) library.  The jmespath.php library is an implementation of the [JMESPath](http://jmespath.org/) specification.
 
 This package also provides Artisan commands to pre-compile and manage your JMESPath expressions.
+
+Thanks to pakages developed by libtek [libtek/laravel-jmespath](https://github.com/libtek/laravel-jmespath) and ofumbi [ofumbi/laravel-jmespath](https://github.com/ofumbi/laravel-jmespath).
 
 ## Installation
 
 ### Install through composer
 
 ```bash
-$ composer require ofumbi/laravel-jmespath
+$ composer require neftaio/laravel-jmespath
 ```
 
 ### Add Service Provider
@@ -19,7 +21,7 @@ In `config/app.php`, add the service provider to the `$providers` array:
 ```php
 'providers' => [
     // ...
-    Ofumbi\Jmes\JmesServiceProvider::class,
+    Neftaio\Jmes\JmesServiceProvider::class,
 ],
 ```
 
@@ -30,7 +32,7 @@ In `config/app.php`, add the facade to the `$aliases` array:
 ```php
 'aliases' => [
     // ...
-    'Jmes' => Libtek\Jmes\Facades\Jmes::class,
+    'Jmes' => Neftaio\Jmes\Facades\Jmes::class,
 ],
 ```
 
@@ -38,7 +40,7 @@ In `config/app.php`, add the facade to the `$aliases` array:
 
 If you'd like to modify the default configuration values or define expressions to pre-compile, publish the package config file:
 ```bash
-php artisan vendor:publish --provider="Libtek\Jmes\JmesServiceProvider"
+php artisan vendor:publish --provider="Neftaio\Jmes\JmesServiceProvider"
 ```
 This will create a `jmes.php` file in your `config` directory.
 

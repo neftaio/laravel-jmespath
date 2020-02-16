@@ -1,9 +1,9 @@
 <?php
-namespace Ofumbi\Jmes\Facades;
+namespace Neftaio\Jmes\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Jmes Extends Facade
+class Jmes extends Facade
 {
     /**
      * Get the registered name of the component.

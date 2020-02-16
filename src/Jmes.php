@@ -1,5 +1,5 @@
 <?php
-namespace Ofumbi\Jmes;
+namespace Neftaio\Jmes;
 
 use JmesPath\Parser;
 use JmesPath\TreeCompiler;

@@ -1,5 +1,5 @@
 <?php
-namespace Ofumbi\Jmes\Console;
+namespace Neftaio\Jmes\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
@@ -80,8 +80,11 @@ class JmesCompileCommand extends Command
         }
 
         if ($saved) {
-            $this->output->success(sprintf("Saved %d %s", $saved,
-                (1 === $saved) ? 'file' : 'files'));
+            $this->output->success(sprintf(
+                "Saved %d %s",
+                $saved,
+                (1 === $saved) ? 'file' : 'files'
+            ));
         }
     }
 
