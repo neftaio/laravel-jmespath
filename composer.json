@@ -22,7 +22,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Ofumbi\\Jmes\\": "src/"
+			"Neftaio\\Jmes\\": "src/"
 		},
 		"files": [
 			"src/helpers.php"
@@ -30,7 +30,7 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-master": "9.0-dev"
+			"dev-master": "dev"
 		},
 		"laravel": {
 			"providers": [
